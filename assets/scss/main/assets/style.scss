@@ -1,0 +1,499 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  overflow-y: scroll;
+  color: #CDCDCD;
+  font-size: 15px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 1.6rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #CDCDCD;
+}
+
+h1 {
+  color: #EFCDB5;
+  font-size: 2.13rem;
+  font-family: Georgia, sans-serif;
+  font-weight: 400;
+  line-height: 35.2px;
+  letter-spacing: 0.06em;
+}
+
+h2 {
+  font-family: "Georgia",sans-serif;
+  font-weight: 400;
+  width: 25rem;
+  font-size: 2.933rem;
+  line-height: 130%;
+}
+
+h3 {
+  font-family: Georgia;
+  font-weight: 400;
+  width: 25rem;
+  font-size: 2.33rem;
+  line-height: 130%;
+  letter-spacing: .06em;
+}
+
+h4 {
+  margin-top: 1.85rem;
+  font-family: 'PT Serif', serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 115%;
+  letter-spacing: .06em;
+  font-style: normal;
+}
+
+h5 {
+  font-family: "Georgia",sans-serif;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+}
+
+p {
+  color: white;
+  font-family: Arial, sans-serif;
+  line-height: 160%;
+}
+
+.container { 
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  
+}
+
+.button {
+  height: 52px;
+  width: 205px;
+  font-family: "Georgia",sans-serif;
+  font-size: 17px;
+  border: 0;
+  border-radius: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.circle-button {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  cursor: pointer;
+  background-position: 15px;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  margin-top: 4rem;
+  z-index: 10;
+
+  &-holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-logo__title {
+    margin: 0 0 0.67rem 0;
+  }
+
+  &-logo__description {
+    margin-top: 0;
+    font-size: 0.866rem;
+    line-height: 0.996rem;
+    letter-spacing: 0.09rem;
+  }
+
+  &-nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  &-navigation{
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+      margin-left: 35px;
+      font-weight: 400;
+    }
+
+    &__link {
+      &:hover {
+        padding-bottom: 3px;
+        color: white;
+        border-bottom: 3px solid #f1cdb3;
+      }
+      &--active {
+        padding-bottom: 3px;
+        color: white;
+        border-bottom: 3px solid #f1cdb3;
+      }
+    }
+  }
+}
+
+
+.start {
+&-screen {
+  padding-top: 12rem;
+  background: radial-gradient(100% 215.42% at 0 0,#5b483a 0,#262425 100%),#211f20;
+  background-size: cover;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+    }
+  }
+
+  &-description {
+    margin-top: -8rem;
+    width: 39%;
+    z-index: 10;
+    position: relative;
+
+
+    &__title {
+      color: #FFFFFF;
+      margin-bottom: 40px;
+    }
+
+    &__subtitle {
+      margin-bottom: 40px;
+      color: #cdcdcd;
+    }
+
+    &__button {
+      color: #292929;
+      background-color: #f1cdb3;
+      &:hover {
+        background-color: #fddcc4;
+      }
+    }
+  }
+
+}
+
+.about {
+background-color: white;
+  padding: 5.33rem 14.33rem 6rem;
+
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-image {
+    margin: 0 7.5rem 0 0;
+    margin-right: 7.5rem;
+  }
+  &-image__item {
+    width: 20rem;
+    height: 27.2rem;
+  }
+  &-description {
+    width: 28.1rem;
+  }
+  &__title {
+    color: #545454;
+    margin: 0 0 0.66rem 0;
+  }
+  &__text {
+    margin: 1.5rem 0 0 0;
+    color: #4c4c4c;
+  }
+}
+
+
+.pets {
+background-color: #f6f6f6;
+padding: 5.33rem 0 6.66rem;
+
+  &__title {
+    color: #545454;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+  }
+  &-button {
+    text-align: center;
+  
+    &__item {
+      color: #292929;
+      border-radius: 30px;
+      background-color: #f1cdb3;
+      width: 265px;
+      text-decoration: none;
+      display: inline-block;
+      line-height: 52px;
+    }
+  }
+}
+
+.slider {
+  margin: 60px 25px;
+
+  &__list {
+    display: flex;
+  }
+
+  &-item {
+    background-color: #fafafa;
+    height: 435px;
+    border-radius: 10px;
+    width: 270px;
+    text-align: center;
+    margin: 0 45px;
+
+    &:hover {
+      background-color: #FFFFFF;
+      box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+      button {
+        background-color: #f1cdb3;
+      }
+    }
+
+    &__name {
+      font-family: "Georgia",sans-serif;
+      font-size: 1.33rem;
+      color: #545454;
+      text-align: center;
+      line-height: 1.53rem;
+      letter-spacing: 0.06em;
+    }
+    &__button {
+      color: #292929;
+      background-color: #fafafa;
+      border: 2px solid #f1cdb3;
+    }
+  }
+
+  &-button {
+    background-image: url(/assets/icons/icons8-длинная-стрелка-влево-16.png);
+    background-color: #f6f6f6;
+    border: 2px solid #f1cdb3;
+  
+    &--left {
+      left: 45px;
+      position: absolute;
+      top: 50%;
+    }
+    &--right {
+      transform: rotate(180deg);
+      right: 35px;
+      position: absolute;
+      top: 50%;
+    }
+      &:hover {
+        background-color: #f1cdb3;
+      }
+    
+  }
+}
+
+.help {
+  background-color: white;
+
+  &-holder {
+    margin: 5.33rem auto 6.66rem;
+  }
+
+  &__title {
+    text-align: center;
+    width: 100%;
+    color: #545454;
+  }
+  
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    row-gap: 3.9rem;
+    column-gap: 8rem;
+    margin: 3.75rem auto 0rem auto;
+    background: #fff;
+  }
+
+  &-item {
+    text-align: center;
+    
+    &__icon {
+    display: block;
+    margin: 0 auto;
+    border-style: none;
+    }
+
+    &__descr {
+    color: #545454;
+    margin-bottom: 0;
+    }
+  }
+}
+
+.donation {
+  background: #f6f6f6;
+
+
+  &-holder {
+    padding: 90px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  &-info {
+  margin-left: 2rem;
+  
+    &__title {
+    margin: 0;
+    color: #545454;
+    }
+
+    &__subtitle {
+      margin-top: 1.33rem;
+      font-size: .93rem;
+      color: #545454;
+      }
+  }
+
+  &-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.18rem;
+    width: 21.81rem;
+    height: 2.68rem;
+    background: #f1cdb3;
+    border-radius: 9px;
+  
+  &__image {
+    margin-right: 0.93rem;
+  }
+  &__link {
+    font-family: Georgia;
+      font-weight: 400;
+      font-size: 1.25rem;
+      line-height: 115%;
+      letter-spacing: .06em;
+      color: #545454;
+      text-decoration: none;
+  }
+  &_descr {
+    margin-top: 1.31rem;
+      font-family: Arial;
+      font-style: italic;
+      font-weight: 400;
+      font-size: .75rem;
+      line-height: 1.11rem;
+      color: #b2b2b2;
+      width: 23.75rem;
+    }
+  }
+}
+
+.footer {
+  padding-top: 2.7rem;
+  background: url(/assets/images/Background_footer.png) center no-repeat;
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-question {
+    margin-top: 1.33rem;
+    width: 18.87rem;
+    height: 14.62rem;
+  }
+  &__title {
+    color: #fff;
+    margin: 0 0 2.5rem;
+  }
+  &-question__block {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+  &__email {
+    display: flex;
+    align-items: center;
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 115%;
+    letter-spacing: .06em;
+    color: #f1cdb3;
+  }
+  &__icon {
+  display: flex;
+  margin-right: 1.18rem;
+  }
+
+  &__phone {
+    display: flex;
+    align-items: center;
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 115%;
+    letter-spacing: .06em;
+    color: #f1cdb3;
+    text-decoration: none;
+  }
+  &-visit {
+    margin-top: 1.33rem;
+    width: 18.87rem;
+    height: 14.62rem;
+  
+    &__block {
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      margin-top: 2rem;
+    }
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 115%;
+    letter-spacing: .06em;
+    color: #f1cdb3;
+
+  }
+  &__icon {
+    display: flex;
+    margin-right: 1.18rem;
+  }
+
+  &-image {
+    margin: 0;
+    padding: 0;
+    border-style: none;
+  }
+}

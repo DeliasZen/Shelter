@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow-y: scroll;">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../assets/normalize/normalize.css">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-holder">
+        <div class="header-logo">
+          <a class="header-logo__link" href="../../index.html">
+            <h1 class="header-logo__title">Cozy House</h1>
+            <p class="header-logo__description">Shelter for pets in Boston</p>
+          </a>
+        </div>
+        <nav class="header-nav">
+          <ul class="header-navigation">
+            <li class="header-navigation__item"><a href="../../index.html" class="header-navigation__link">About the
+                shelter</a>
+            </li>
+            <li class="header-navigation__item"><a href="#friends"
+                class="header-navigation__link header-navigation__link--active">Our pets</a></li>
+            <li class="header-navigation__item"><a href="../../index.html#help" class="header-navigation__link">Help
+                the shelter</a>
+            </li>
+            <li class="header-navigation__item"><a href="#contact" class="header-navigation__link">Contacts</a></li>
+          </ul>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </div>
+      <div class="menu">
+        <div class="menu__background"></div>
+        <div class="menu__wrapper">
+          <div class="menu-logo">
+            <h1 class="menu-logo__title">Cozy House</h1>
+            <p class="menu-logo__description">Shelter for pets in Boston</p>
+          </div>
+          <nav class="menu-nav">
+            <ul class="menu-navigation">
+              <li class="menu-navigation__item"><a class="menu-navigation__link menu-navigation__link--active"
+                  href="../../index.html">About the shelter</a></li>
+              <li class="menu-navigation__item"><a class="menu-navigation__link" href="#friends">Our pets</a></li>
+              <li class="menu-navigation__item"><a class="menu-navigation__link" href="../../index.html#help">Help the
+                  shelter</a></li>
+              <li class="menu-navigation__item"><a class="menu-navigation__link" href="#contact">Contacts</a></li>
+            </ul>
+        </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="friends" id="friends">
+      <div class="friends-holder container">
+        <h3 class="friends__title">Our friends who <br>
+          are looking for a house</h3>
+        <div class="slider">
+          <ul class="slider__list">
+            <li class="slider-item">
+              <img class="slider-item__image" src="../../assets/images/pets-katrine.png" alt="cat-katrine">
+              <p class="slider-item__name">Katrine</p>
+              <button class="slider-item__button button">Learn More</button>
+            </li>
+            <li class="slider-item">
+              <img class="slider-item__image" src="../../assets/images/pets-jennifer.png" alt="cat-katrine">
+              <p class="slider-item__name">Jennifer</p>
+              <button class="slider-item__button button">Learn More</button>
+            </li>
+            <li class="slider-item">
+              <img class="slider-item__image" src="../../assets/images/pets-woody.png" alt="cat-katrine">
+              <p class="slider-item__name">Woody</p>
+              <button class="slider-item__button button">Learn More</button>
+            </li>
+            <li class="slider-item">
+              <img class="slider-item__image" src="../../assets/images/pets-Sophia.png" alt="cat-katrine">
+              <p class="slider-item__name">Sophia</p>
+              <button class="slider-item__button button">Learn More</button>
+            </li>
+            <li class="slider-item">
+              <img class="slider-item__image" src="../../assets/images/pets-timmy.png" alt="cat-katrine">
+              <p class="slider-item__name">Timmy</p>
+              <button class="slider-item__button button">Learn More</button>
+            </li>
+            <li class="slider-item">
+              <img class="slider-item__image" src="../../assets/images/pets-charly.webp" alt="cat-katrine">
+              <p class="slider-item__name">Charly</p>
+              <button class="slider-item__button button">Learn More</button>
+            </li>
+            <li class="slider-item">
+              <img class="slider-item__image" src="../../assets/images/pets-scarlett.webp" alt="cat-katrine">
+              <p class="slider-item__name">Scarlett</p>
+              <button class="slider-item__button button">Learn More</button>
+            </li>
+            <li class="slider-item">
+              <img class="slider-item__image" src="../../assets/images/pets-freddie.webp" alt="cat-katrine">
+              <p class="slider-item__name">Freddie</p>
+              <button class="slider-item__button button">Learn More</button>
+            </li>
+          </ul>
+        </div>
+        <div class="friends-pagination">
+          <a class="friends-pagination__item friends-pagination__item--disabled circle-button" href="#">&lt&lt</a>
+          <a class="friends-pagination__item friends-pagination__item--disabled circle-button" href="#">&lt</a>
+          <a class="friends-pagination__item friends-pagination__item--active circle-button" href="#">1</a>
+          <a class="friends-pagination__item friends-pagination__item--able circle-button" href="#">&gt</a>
+          <a class="friends-pagination__item friends-pagination__item--able circle-button" href="#">&gt&gt</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-wrapper">
+        <div class="footer-question">
+          <h3 class="footer__title">For questions and suggestions</h3>
+          <div class="footer-question__block">
+            <a class="footer__email" href="mailto:email@shelter.com"><img class="footer__icon"
+                src="../../assets/icons/icon-email.png" alt="footer icon">email@shelter.com</a>
+          </div>
+          <div class="footer-question__block">
+            <a class="footer__phone" href="tel:136745677554"><img class="footer__icon"
+                src="../../assets/icons/icon-phone.png" alt="footer icon">+13 674 567 75
+              54</a>
+          </div>
+        </div>
+        <div class="footer-visit">
+          <h3 class="footer__title">We are waiting for your visit</h3>
+          <div class="footer-visit__block">
+            <a class="footer__link" target="_blank" href="https://goo.gl/maps/jUoSueHGmthtEAYcA"><img
+                class="footer__icon" src="../../assets/icons/icon-marker.png" alt="footer icon">1 Central Street, Boston
+              (entrance from the store)</a>
+          </div>
+          <div class="footer-visit__block">
+            <a class="footer__link" target="_blank" href="https://goo.gl/maps/yFHBs6qQmZvv6bWq6"><img
+                class="footer__icon" src="../../assets/icons/icon-marker.png" alt="footer icon">18 South Park,
+              London</a>
+          </div>
+        </div>
+      </div>
+      <img class="footer-image" src="../../assets/images/footer-puppy.png" alt="footer puppy">
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
